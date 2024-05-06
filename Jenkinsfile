@@ -39,4 +39,3 @@ pipeline {
             echo 'CI/CD pipeline failed! Check Jenkins logs for details.'
         }
     }
-}
