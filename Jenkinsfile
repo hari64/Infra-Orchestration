@@ -12,10 +12,10 @@ pipeline {
                 sh 'vagrant up'
             }
         }
-        stage('Test') {
-            steps {
-                // Add test steps if applicable
-            }
+        // stage('Test') {
+        //     steps {
+        //         // Add test steps if applicable
+        //     }
         }
         stage('Deploy to Staging') {
             steps {
