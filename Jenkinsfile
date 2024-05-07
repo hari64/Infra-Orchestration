@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent staging-environment
     stages {
         stage('Build') {
             steps {
@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 // Copying files to staging directory on the same VM
-                sh 'sudo -S cp app.py /home/vagrant/staging/'
+                sh 'cp app.py /home/vagrant/staging/'
                 
             }
         }
