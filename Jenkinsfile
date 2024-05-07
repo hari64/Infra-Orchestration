@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 // Copying files to staging directory on the same VM
-                sh 'rsync -av app.py /home/vagrant/staging/'
+                sh 'cp app.py /home/vagrant/staging/'
                 
             }
         }
