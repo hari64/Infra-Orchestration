@@ -1,5 +1,5 @@
 pipeline {
-    agent staging-environment
+    agent staging
     stages {
         stage('Build') {
             steps {
