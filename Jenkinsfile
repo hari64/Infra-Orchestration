@@ -9,7 +9,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 // Copying files to staging directory on the same VM
-                sh 'sudo cp app.py /home/vagrant/staging/'
+                sh 'sudo -S cp app.py /home/vagrant/staging/'
                 
             }
         }
